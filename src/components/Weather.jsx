@@ -19,7 +19,7 @@ export default function Weather() {
     }
     try {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=0eab41f668c84456b3f140537251504&q=${data}&aqi=no`
+        `https://api.weatherapi.com/v1/current.json?key=0eab41f668c84456b3f140537251504&q=${data}&aqi=no`
       );
       const cityData = await response.json();
       if (!response.ok) {
