@@ -42,8 +42,8 @@ export default function Weather() {
   }, []);
 
   return (
-    <div className="Weather p-10 bg-purple-700 relative rounded-lg bg-[linear-gradient(45deg,#2f4680,#500ae4)]">
-      <div className="searchbar  justify-center items-center flex  gap-4">
+    <div className="Weather w-[400px] max650:w-full max650:max-w-[320px] p-10 max650:p-6 bg-purple-700 relative rounded-lg bg-[linear-gradient(45deg,#2f4680,#500ae4)]">
+     <div className="searchbar flex justify-center items-center gap-4 max650:flex-col">
         <input
           type="text"
           placeholder="Search"
@@ -57,7 +57,7 @@ export default function Weather() {
         <img
           onClick={() => {
             search(inputData.current.value);
-            setQuery("")
+            setQuery("");
           }}
           src={search_icon}
           alt=""
@@ -72,14 +72,14 @@ export default function Weather() {
             className="w-[150px] my-4"
           />
         )}
-        <p className="text-white text-[70px]">
+        <p className="text-white text-[70px] max650:text-[48px]">
           {weatherData == "" ? 16 : weatherData.temperature}&deg;C
         </p>
-        <p className="text-white text-[30px]">
+       <p className="text-white text-[30px] max650:text-[22px]">
           {weatherData == "" ? "London" : weatherData.cityName}
         </p>
       </div>
-      <div className="weather_data flex  justify-between items-center gap-5  mt-4 ">
+      <div className="weather_data flex justify-between items-center gap-5 mt-4 max650:flex-col">
         <div className="col flex  gap-3 ">
           {a[3] && (
             <img className="m-2" width={"26px"} src={images[a[3]]} alt="" />

@@ -1,7 +1,7 @@
 import Weather from "./components/Weather";
 function App() {
   return (
-    <main className="  flex justify-center items-center box-border max-w-[100vw]   ">
+    <main className="min-h-screen flex justify-center items-center p-4 box-border">
       <Weather />
     </main>
   );
