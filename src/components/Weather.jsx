@@ -43,7 +43,7 @@ export default function Weather() {
 
   return (
     <div className="Weather p-10 bg-purple-700 relative rounded-lg bg-[linear-gradient(45deg,#2f4680,#500ae4)]">
-      <div className="searchbar  justify-center items-center flex  max650:flex-col gap-4">
+      <div className="searchbar  justify-center items-center flex  gap-4">
         <input
           type="text"
           placeholder="Search"
@@ -79,7 +79,7 @@ export default function Weather() {
           {weatherData == "" ? "London" : weatherData.cityName}
         </p>
       </div>
-      <div className="weather_data flex  justify-between items-center gap-5 max650:flex-col mt-4 ">
+      <div className="weather_data flex  justify-between items-center gap-5  mt-4 ">
         <div className="col flex  gap-3 ">
           {a[3] && (
             <img className="m-2" width={"26px"} src={images[a[3]]} alt="" />
