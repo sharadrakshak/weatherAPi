@@ -43,7 +43,7 @@ export default function Weather() {
 
   return (
     <div className="Weather w-[400px] max650:w-full max650:max-w-[320px] p-10 max650:p-6 bg-purple-700 relative rounded-lg bg-[linear-gradient(45deg,#2f4680,#500ae4)]">
-     <div className="searchbar flex justify-center items-center gap-4 max650:flex-col">
+      <div className="searchbar flex justify-center items-center gap-4 max650:flex-col">
         <input
           type="text"
           placeholder="Search"
@@ -51,7 +51,7 @@ export default function Weather() {
           onChange={(e) => {
             setQuery(e.target.value);
           }}
-          className="  border-none rounded-full outline-none bg-[#ebfffc] pl-6 text-[#272727] h-12 text-[17px]"
+          className="border-none rounded-full outline-none bg-[#ebfffc] pl-6 text-[#272727] h-12 text-[17px] max650:w-[200px] "
           ref={inputData}
         />
         <img
@@ -75,7 +75,7 @@ export default function Weather() {
         <p className="text-white text-[70px] max650:text-[48px]">
           {weatherData == "" ? 16 : weatherData.temperature}&deg;C
         </p>
-       <p className="text-white text-[30px] max650:text-[22px]">
+        <p className="text-white text-[30px] max650:text-[22px]">
           {weatherData == "" ? "London" : weatherData.cityName}
         </p>
       </div>
