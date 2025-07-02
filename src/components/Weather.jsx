@@ -51,7 +51,7 @@ export default function Weather() {
           onChange={(e) => {
             setQuery(e.target.value);
           }}
-          className="border-none rounded-full outline-none bg-[#ebfffc] pl-6 text-[#272727] h-12 text-[17px] max650:w-[200px] "
+          className="border-none rounded-full outline-none bg-[#ebfffc] pl-6 text-[#272727] h-12 text-[17px] max650:w-[260px] "
           ref={inputData}
         />
         <img
